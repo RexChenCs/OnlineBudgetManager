@@ -1,0 +1,11 @@
+#search_action{
+    /*background-color: #adadad;*/
+    background-color: #d5d5d5;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+}
+
+#search_action:hover,
+#search_action:focus {
+    color: #2196F3;
+    cursor: pointer;
+}

@@ -1,0 +1,567 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang=""> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8" lang=""> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9" lang=""> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang=""> <!--<![endif]-->
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Budget Manager | Customize</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!--favicon-->
+    <link rel="apple-touch-icon" sizes="57x57" href="../favicon.ico/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="../favicon.ico/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="../favicon.ico/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="../favicon.ico/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="../favicon.ico/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="../favicon.ico/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="../favicon.ico/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="../favicon.ico/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="../favicon.ico/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192"  href="../favicon.ico/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="../favicon.ico/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="../favicon.ico/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../favicon.ico/favicon-16x16.png">
+    <link rel="manifest" href="../favicon.ico/manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+    <!--end of favicon-->
+
+    <link rel="apple-touch-icon" href="apple-touch-icon.png">
+    <link rel="stylesheet" href="../assets/css/bootstrap.min.css">
+
+    <!--For Plugins external css-->
+    <link rel="stylesheet" href="../assets/css/plugins.css" />
+    <link rel="stylesheet" href="../assets/css/roboto-webfont.css" />
+
+    <!--Theme custom css -->
+    <link rel="stylesheet" href="../assets/css/style.css">
+
+    <!--Theme Responsive css-->
+    <link rel="stylesheet" href="../assets/css/responsive.css" />
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="../assets/css/customize.css">
+
+</head>
+<body>
+<!--[if lt IE 8]>
+<p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+<![endif]-->
+
+<!-- Sections -->
+<section id="social" class="social">
+    <div class="container">
+        <!-- Example row of columns -->
+        <div class="row">
+            <div class="social-wrapper">
+                <div class="col-md-6">
+                    <div class="social-icon">
+                        <!--<a href="#"><i class="fa fa-facebook"></i></a>-->
+                        <!--<a href="#"><i class="fa fa-twitter"></i></a>-->
+                        <!--<a href="#"><i class="fa fa-google-plus"></i></a>-->
+                        <!--<a href="#"><i class="fa fa-linkedin"></i></a>-->
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="social-contact">
+                        <a href="tel:+16463012053"><i class="fa fa-phone"></i>+1(646)301-2053</a>
+                        <a href="mailto:budget.manager.online@gmail.com"><i class="fa fa-envelope"></i>budget.manager.online@gmail.com</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div> <!-- /container -->
+</section>
+
+<nav class="navbar navbar-default">
+    <div class="container">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" ><img src="../assets/images/logo.png" style="width: 200px; height: 40px" alt="Logo" /></a>
+        </div>
+
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+
+            <ul class="nav navbar-nav navbar-right">
+                <li><a href="./home.html">Overview Analysis</a></li>
+                <li class="active"><a href="./customize.html">Table Customization</a></li>
+                <li><a href="./budget.html">Budget Management</a></li>
+                <li><a href="./export.html">Data Exportation</a></li>
+                <li class="login" onclick="signout()" style="width:auto;"><a>Sign Out</a></li>
+            </ul>
+
+        </div><!-- /.navbar-collapse -->
+    </div><!-- /.container-fluid -->
+</nav>
+
+<!-- Sections -->
+<section id="business" class="portfolio sections">
+    <div class="container">
+        <div class="head_title text-center">
+            <h1>My Customize Platform</h1>
+            <p>In this section, you can customize your own table.</p>
+        </div>
+
+
+        <div class="row">
+            <div class="portfolio-wrapper text-center">
+
+                <div class="col-md-3 col-sm-6 col-xs-12" onclick="document.getElementById('income_type_modal').style.display='block'">
+                    <div class="community-edition">
+                        <i class="fa fa-gears"></i>
+                        <div class="separator"></div>
+                        <h4>Income Type Edition</h4>
+                        <p>Modify your Income type.</p>
+                    </div>
+                </div>
+
+                <div class="col-md-3 col-sm-6 col-xs-12" onclick="document.getElementById('income_source_modal').style.display='block'">
+                    <div class="community-edition">
+                        <i class="fa fa-dollar"></i>
+                        <div class="separator"></div>
+                        <h4>Income Source Edition</h4>
+                        <p>Modify your income source.</p>
+                    </div>
+                </div>
+
+                <div class="col-md-3 col-sm-6 col-xs-12" onclick="document.getElementById('item_type_modal').style.display='block'">
+                    <div class="community-edition">
+                        <i class="fa fa-gears"></i>
+                        <div class="separator"></div>
+                        <h4>Item List Type Edition</h4>
+                        <p>Modify your item type.</p>
+                    </div>
+                </div>
+
+                <div class="col-md-3 col-sm-6 col-xs-12" onclick="document.getElementById('item_source_modal').style.display='block'">
+                    <div class="community-edition">
+                        <i class="fa fa-dollar"></i>
+                        <div class="separator"></div>
+                        <h4>Item List Source Edition</h4>
+                        <p>Modify your item source.</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<!-- income type modal-->
+<div id="income_type_modal" class="modal">
+
+    <span onclick="document.getElementById('income_type_modal').style.display='none'" class="close" title="Close Modal">&times;</span>
+    <!-- Sections -->
+
+    <section class="price sections">
+
+        <div class="head_title text-center">
+            <h1>Income Type Services</h1>
+            <p>Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum. Duis mollis, est non commodo luctus, nisi erat porttitor ligula.</p>
+        </div>
+
+        <div class="contain">
+
+            <ul class="nav nav-pills nav-justified">
+                <li class="active"><a href="#add_source_type" data-toggle="pill">Add Income Type</a></li>
+                <li><a href="#edit_source_type" data-toggle="pill">Edit Income Type</a></li>
+            </ul>
+
+            <div class="tab-content">
+
+                <div class="tab-pane active" id="add_source_type">
+
+                    <div class="form_container">
+
+                        <div class="row">
+                            <div class="col-sm-6 form-group">
+                                <label for="source_type"> Income Type:</label>
+                                <input type="text" class="form-control" id="source_type" name="name" required>
+                            </div>
+                            <div class="col-sm-6 form-group">
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="col-sm-12 form-group">
+                                <label for="type_description"> Description:</label>
+                                <textarea  id="type_description" class="form-control" type="textarea"  maxlength="500" rows="4"></textarea>
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="col-sm-12 form-group">
+                                <button type="submit" class="btn btn-lg btn-default pull-right" onclick="Income_Type_validation()">Add</button>
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <div class="tab-pane" id="edit_source_type">
+                    <div class="table-wrapper">
+                        <div class="table-title">
+                            <div class="row">
+                                <div class="col-sm-12"><h2>Income Type Edition</h2></div>
+                            </div>
+                        </div>
+                        <table class="table table-bordered">
+                            <thead>
+                            <tr>
+                                <th>Income Type</th>
+                                <th>Description</th>
+                                <th>Actions</th>
+                            </tr>
+                            </thead>
+                            <tbody id="source_type_table">
+
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+
+            </div><!-- tab content -->
+
+        </div>
+
+    </section>
+
+
+    <div class="clearfix">
+        <button type="button" onclick="document.getElementById('income_type_modal').style.display='none'" class="cancelbtn">Cancel</button>
+    </div>
+</div>
+
+
+<!--income source modal-->
+<div id="income_source_modal" class="modal">
+
+    <span onclick="document.getElementById('income_source_modal').style.display='none'" class="close" title="Close Modal">&times;</span>
+    <!-- Sections -->
+
+    <section class="price sections">
+
+        <div class="head_title text-center">
+            <h1>Income Source Services</h1>
+            <p>Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum. Duis mollis, est non commodo luctus, nisi erat porttitor ligula.</p>
+        </div>
+
+        <div class="contain">
+
+            <ul class="nav nav-pills nav-justified">
+                <li class="active"><a href="#add_income_source" data-toggle="pill">Add Income Source</a></li>
+                <li><a href="#edit_income_source" data-toggle="pill">Edit Income Source</a></li>
+            </ul>
+
+            <div class="tab-content">
+
+                <div class="tab-pane active" id="add_income_source">
+
+                    <div class="form_container">
+                        <div class="row">
+
+                            <div class="col-sm-3 form-group">
+                                <label for="income_source_number">Income Source#:</label>
+                                <input type="number" class="form-control" id="income_source_number" readonly>
+                            </div>
+
+                            <div class="col-sm-3 form-group">
+                                <label for="income_source_name">Income Name:</label>
+                                <input type="text" class="form-control" id="income_source_name" required>
+                            </div>
+
+                            <div class="col-sm-3 form-group">
+                                <label for="income_amount">Income Amount:</label>
+                                <input type="number"  class="form-control" id="income_amount"  min="0" value="0" step=".01" required>
+                            </div>
+
+                            <div class="col-sm-3 form-group">
+                                <label for="income_source_type">Income Type:</label>
+                                <select id="income_source_type" type="text" class="form-control"></select>
+                            </div>
+
+                        </div>
+                        <div class="row">
+                            <div class="col-sm-12 form-group">
+                                <label for="income_source_description"> Description:</label>
+                                <textarea  id="income_source_description" class="form-control" type="textarea"  maxlength="500" rows="4"></textarea>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-sm-12 form-group">
+                                <button type="submit" class="btn btn-lg btn-default pull-right" onclick="Income_source_validation()">Add</button>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+
+                <div class="tab-pane" id="edit_income_source">
+                    <div class="table-wrapper">
+                        <div class="table-title">
+                            <div class="row">
+                                <div class="col-sm-12"><h2>Income Source Edition</h2></div>
+                            </div>
+                        </div>
+                        <table class="table table-bordered">
+                            <thead>
+                            <tr>
+                                <th>Source #</th>
+                                <th>Income Name</th>
+                                <th>Amount</th>
+                                <th>Type</th>
+                                <th>Description</th>
+                                <th>Actions</th>
+
+                            </tr>
+                            </thead>
+                            <tbody id="income_source_table"></tbody>
+                        </table>
+                    </div>
+                </div>
+
+            </div><!-- tab content -->
+
+        </div>
+
+    </section>
+
+
+    <div class="clearfix">
+        <button type="button" onclick="document.getElementById('income_source_modal').style.display='none'" class="cancelbtn">Cancel</button>
+    </div>
+</div>
+
+
+<!-- item list type modal-->
+<div id="item_type_modal" class="modal">
+
+    <span onclick="document.getElementById('item_type_modal').style.display='none'" class="close" title="Close Modal">&times;</span>
+    <!-- Sections -->
+
+    <section class="price sections">
+
+        <div class="head_title text-center">
+            <h1>Item Type Services</h1>
+            <p>Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum. Duis mollis, est non commodo luctus, nisi erat porttitor ligula.</p>
+        </div>
+
+        <div class="contain">
+
+            <ul class="nav nav-pills nav-justified">
+                <li class="active"><a href="#add_item_type" data-toggle="pill">Add Item Type</a></li>
+                <li><a href="#edit_item_type" data-toggle="pill">Edit Item Type</a></li>
+            </ul>
+
+            <div class="tab-content">
+
+                <div class="tab-pane active" id="add_item_type">
+
+                    <div class="form_container">
+
+                        <div class="row">
+                            <div class="col-sm-6 form-group">
+                                <label for="item_type"> Item Type:</label>
+                                <input type="text" class="form-control" id="item_type"  required>
+                            </div>
+                            <div class="col-sm-6 form-group"></div>
+                        </div>
+
+                        <div class="row">
+                            <div class="col-sm-12 form-group">
+                                <label for="item_type_description"> Description:</label>
+                                <textarea  id="item_type_description" class="form-control" type="textarea"  maxlength="500" rows="4"></textarea>
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="col-sm-12 form-group">
+                                <button type="submit" class="btn btn-lg btn-default pull-right" onclick="Item_Type_validation()">Add</button>
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <div class="tab-pane" id="edit_item_type">
+                    <div class="table-wrapper">
+                        <div class="table-title">
+                            <div class="row">
+                                <div class="col-sm-12"><h2>Item Type Edition</h2></div>
+                            </div>
+                        </div>
+                        <table class="table table-bordered">
+                            <thead>
+                            <tr>
+                                <th>Item Type</th>
+                                <th>Description</th>
+                                <th>Actions</th>
+                            </tr>
+                            </thead>
+                            <tbody id="item_type_table"></tbody>
+                        </table>
+                    </div>
+                </div>
+
+            </div><!-- tab content -->
+
+        </div>
+
+    </section>
+
+
+    <div class="clearfix">
+        <button type="button" onclick="document.getElementById('item_type_modal').style.display='none'" class="cancelbtn">Cancel</button>
+    </div>
+</div>
+
+
+<!-- item list source modal-->
+<div id="item_source_modal" class="modal">
+
+    <span onclick="document.getElementById('item_source_modal').style.display='none'" class="close" title="Close Modal">&times;</span>
+    <!-- Sections -->
+
+    <section class="price sections">
+
+        <div class="head_title text-center">
+            <h1>Item Source Services</h1>
+            <p>Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum. Duis mollis, est non commodo luctus, nisi erat porttitor ligula.</p>
+        </div>
+
+        <div class="contain">
+
+            <ul class="nav nav-pills nav-justified">
+                <li class="active"><a href="#add_item_source" data-toggle="pill">Add Item Source</a></li>
+                <li><a href="#edit_item_source" data-toggle="pill">Edit Item Source</a></li>
+            </ul>
+
+            <div class="tab-content">
+
+                <div class="tab-pane active" id="add_item_source">
+
+                    <div class="form_container">
+                        <div class="row">
+
+                            <div class="col-sm-3 form-group">
+                                <label for="item_source_number">Item Source#:</label>
+                                <input type="number" class="form-control" id="item_source_number" readonly>
+                            </div>
+
+                            <div class="col-sm-3 form-group">
+                                <label for="item_source_name">Item Name:</label>
+                                <input type="text" class="form-control" id="item_source_name" required>
+                            </div>
+
+                            <div class="col-sm-3 form-group">
+                                <label for="item_amount">Item Amount:</label>
+                                <input type="number"  class="form-control" id="item_amount"  min="0" value="0" step=".01" required>
+                            </div>
+
+                            <div class="col-sm-3 form-group">
+                                <label for="item_source_type">Item Type:</label>
+                                <select id="item_source_type" type="text" class="form-control">
+                                </select>
+                            </div>
+
+                        </div>
+                        <div class="row">
+                            <div class="col-sm-12 form-group">
+                                <label for="item_source_description"> Description:</label>
+                                <textarea  id="item_source_description" class="form-control" type="textarea"  maxlength="500" rows="4"></textarea>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-sm-12 form-group">
+                                <button type="submit" class="btn btn-lg btn-default pull-right" onclick="Item_source_validation()">Add</button>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+
+                <div class="tab-pane" id="edit_item_source">
+                    <div class="table-wrapper">
+                        <div class="table-title">
+                            <div class="row">
+                                <div class="col-sm-12"><h2>Item Source Edition</h2></div>
+                            </div>
+                        </div>
+                        <table class="table table-bordered">
+                            <thead>
+                            <tr>
+                                <th>Source#</th>
+                                <th>Item Name</th>
+                                <th>Amount</th>
+                                <th>Type</th>
+                                <th>Description</th>
+                                <th>Actions</th>
+                            </tr>
+                            </thead>
+                            <tbody id="item_source_table"></tbody>
+                        </table>
+                    </div>
+                </div>
+
+            </div><!-- tab content -->
+
+        </div>
+
+    </section>
+
+
+    <div class="clearfix">
+        <button type="button" onclick="document.getElementById('item_source_modal').style.display='none'" class="cancelbtn">Cancel</button>
+    </div>
+</div>
+
+
+
+
+<!--Footer-->
+<footer id="footer" class="footer">
+    <div class="container">
+        <div class="row">
+            <div class="footer-wrapper">
+                <div class="col-md-12 col-sm-12 col-xs-12">
+                    <div class="copyright">
+                        <p> © 2018, Rex Chen, All rights reserved.</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</footer>
+
+
+<script src="../assets/js/vendor/jquery-1.11.2.min.js"></script>
+<script src="../assets/js/vendor/bootstrap.min.js"></script>
+<script src="../assets/js/modernizr.js"></script>
+<script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+<script src="https://www.gstatic.com/firebasejs/4.9.1/firebase.js"></script>
+<script src="../assets/js/main.js"></script>
+<script src="../assets/js/firebase_action.js"></script>
+<script src="../assets/js/validation.js"></script>
+<script src="../assets/js/customize.js"></script>
+
+</body>
+</html>
