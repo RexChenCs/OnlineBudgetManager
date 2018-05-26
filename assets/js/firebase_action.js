@@ -44,17 +44,27 @@ function login(){
     var email = document.getElementById("signin_email").value;
     var password = document.getElementById("signin_psw").value;
 
-    firebase.auth().signInWithEmailAndPassword(email, password)
-        .then(function (user) {
-            document.getElementById('login_modal').style.display='none';
+    firebase.auth().setPersistence(firebase.auth.Auth.Persistence.SESSION)
+        .then(function() {
 
+            return firebase.auth().signInWithEmailAndPassword(email, password)
+                .then(function (user) {
+                    document.getElementById('login_modal').style.display='none';
+
+                })
+                .catch(function(error) {
+                    var errorMessage = error.message;
+                    document.getElementById('login-error').innerHTML = "<Strong>Error: <Strong>" + errorMessage;
+                    document.getElementById('login-error-bar').style.display="block";
+
+                });
         })
         .catch(function(error) {
+            // Handle Errors here.
+            var errorCode = error.code;
             var errorMessage = error.message;
-            document.getElementById('login-error').innerHTML = "<Strong>Error: <Strong>" + errorMessage;
-            document.getElementById('login-error-bar').style.display="block";
-
         });
+
 }
 
 function sendEmailVerification() {
